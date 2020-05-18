@@ -1,13 +1,13 @@
 #include <bits/stdc++.h>
-
+#include <numeric> 
 using namespace std;
 
 vector<string> split_string(string);
 
 // Complete the aVeryBigSum function below.
 long aVeryBigSum(vector<long> ar) {
-
-
+   long firstValue  = 0;  
+   return accumulate(ar.begin(), ar.end(), firstValue); 
 }
 
 int main()
